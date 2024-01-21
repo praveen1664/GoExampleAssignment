@@ -18,5 +18,8 @@ jobs:
       with:
         go-version: 1.17
 
+    - name: Initialize Go module
+      run: go mod init your-module-name
+
     - name: Build
       run: make build
